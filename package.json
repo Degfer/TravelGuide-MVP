@@ -1,0 +1,35 @@
+{
+  "name": "tinywalks",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "ionic:build": "npm run build",
+    "ionic:serve": "vite dev --host"
+  },
+  "dependencies": {
+    "@2gis/mapgl": "^1.51.0",
+    "@2gis/mapgl-directions": "^2.0.3",
+    "@capacitor/android": "6.1.2",
+    "@capacitor/app": "6.0.1",
+    "@capacitor/cli": "6.1.2",
+    "@capacitor/core": "6.1.2",
+    "@capacitor/haptics": "6.0.1",
+    "@capacitor/keyboard": "6.0.2",
+    "@capacitor/status-bar": "6.0.1",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@ionic/vue-router": "^8.2.7",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vue-router": "^4.4.3",
+    "vue-tsc": "^2.0.29"
+  }
+}
