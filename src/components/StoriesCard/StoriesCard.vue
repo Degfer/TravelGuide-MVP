@@ -31,7 +31,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>City Do-Do list</ion-card-title>
+      <ion-card-title>Путевой лист</ion-card-title>
     </ion-card-header>
     <ion-card-header v-for="item in cityTask" :key="item.id">
       <ion-card-title v-if="!item.status">{{ item.title }}</ion-card-title>
@@ -61,10 +61,10 @@ const isElVisible = ref([
     city: 'Тейково',
     description: 'Тейково - начало маршрута',
     img: [
-      ''
+      '/src/components/img/img1-city1Go.jpg'
     ],
     title: [
-      ""
+      "Общий вид площади Ленина"
     ],
     description_title: [
       `
