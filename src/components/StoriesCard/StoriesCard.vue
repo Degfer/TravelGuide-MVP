@@ -2,12 +2,12 @@
   <ion-card v-for="is in isElVisible" :key="is.id">
     <ion-card-header>
       <ion-card-title>{{ is.city }}</ion-card-title>
-      <ion-button v-if="!is.status" @click="doText(true, is.id)"
-        >Подробнее</ion-button
-      >
-      <ion-button v-else="is.status" @click="doText(false, is.id)"
-        >Скрыть</ion-button
-      >
+      <ion-button v-if="!is.status" @click="doText(true, is.id)">
+        Подробнее
+      </ion-button>
+      <ion-button v-else="is.status" @click="doText(false, is.id)">
+        Скрыть
+      </ion-button>
     </ion-card-header>
 
     <ion-card-content v-if="is.status">
@@ -39,11 +39,12 @@
       <ion-card-title
         v-else
         style="text-decoration: line-through solid !important"
-        >{{ item.title }}</ion-card-title
       >
-      <ion-button v-if="!item.status" @click="setDoneCity(item.id)"
-        >✔️</ion-button
-      >
+        {{ item.title }}
+      </ion-card-title>
+      <ion-button v-if="!item.status" @click="setDoneCity(item.id)">
+        ✔️
+      </ion-button>
       <ion-button v-else @click="removeCity(item.id)">❌</ion-button>
     </ion-card-header>
   </ion-card>
